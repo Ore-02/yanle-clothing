@@ -1,0 +1,16 @@
+.cat-con {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    column-gap: 3px;
+    row-gap: 30px;
+}
+.cat-title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.products-length {
+    text-align: center;
+    font-weight: 300;
+
+}

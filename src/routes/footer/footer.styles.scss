@@ -1,0 +1,139 @@
+@import "../../mixins";
+
+
+.footer {
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    padding: 2.5rem 0px;
+    text-align: center;
+    font-size: 12px;
+    width: 100vw;
+
+    
+    @include breakpoint-up (large) {
+        display: flex;
+        justify-content: space-between;
+
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr) 2fr;
+        // grid-template-rows: repeat(2, 1fr);
+        // grid-template-areas: 
+        // "logo link1 links2 btn"
+        // "social link1 link2 btn";
+        // align-items: center;
+        // justify-items: start;
+        // text-align: left;
+        padding: 33px 10.1875rem;
+    }
+
+    a {
+        color: white;
+    }
+
+    .col0 {
+        @include breakpoint-up(large) {
+            align-items: left;
+        }
+    }
+    .footer-logo {
+        @include breakpoint-up(large) {
+            // grid-area: logo;
+        }
+        
+    }
+
+    .footer-social {
+        margin-top: 2.1875rem;
+        a{
+            padding-left: 0.9375rem;
+            svg path {
+                transition: fill 150ms ease-in-out;
+            }
+
+            &:hover svg path {
+              fill: rgb(50, 182, 205);  
+            }
+        }
+
+        @include breakpoint-up(large) {
+            // grid-area: social;
+            margin-top: 4.1875rem;
+            
+        }
+    }
+
+    .col1 {
+        margin-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+
+        a:hover {
+            color: rgb(50, 182, 205);
+        }
+
+        a:not(:first-child){
+            padding-top: 1.4375rem;
+        }
+
+        @include breakpoint-up(large) {
+            // grid-area: link1;
+            padding: 0;
+            margin: 0;
+           
+            text-align: left;
+            a{
+                padding-top: 0;
+            }
+
+        }
+    }
+
+    .col2 {
+        display: flex;
+        flex-direction: column;
+
+        a{
+            padding-top: 1.4375rem;
+        }
+        a:hover {
+            color: rgb(50, 182, 205);
+        }
+
+        @include breakpoint-up(large) {
+            // grid-area: link2;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            a{
+                padding-top: 0;
+            }
+
+            a:not(:first-child){
+                padding-top: 1.4375rem;
+            }
+        }
+        
+    }
+
+    .col3 {
+        margin-top: 2.25rem;
+        @include breakpoint-up(large) {
+            // grid-area: btn;
+            // justify-self: end;
+            text-align: right;
+            margin: 0;
+        }
+      
+
+        .footer-copyright {
+            margin-top: 1.875rem;
+            
+
+            @include breakpoint-up(large) {
+                margin-top: 3.1875rem;
+                
+            }
+        }
+    }
+}

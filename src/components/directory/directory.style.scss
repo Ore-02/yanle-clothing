@@ -1,0 +1,12 @@
+@import '../../mixins';
+
+.directory-container {
+
+    @include breakpoint-up(large) {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    
+  }

@@ -12,11 +12,20 @@
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid darkgrey;
-  
+
+      @media (max-width:64em) {
+        // width: 100%;
+        // justify-content: start;
+      }
       .header-block {
         text-transform: capitalize;
-        width: 23%;
+        // width: 23%;
         font-weight: 700;
+
+        @media (max-width:64em) {
+          font-size: 14px;
+       
+        }
   
         &:last-child {
           width: 8%;

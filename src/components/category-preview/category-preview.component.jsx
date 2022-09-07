@@ -13,6 +13,14 @@ const CategoryPreview =({title, products}) => {
                <ProductCard key ={product.id} product={product}/>)
             }
             </div>
+            <div className='preview for-mobile'>
+            {
+               products.filter((_, idx) => idx < 2)
+               .map((product) => 
+               <ProductCard key ={product.id} product={product}/>)
+            }
+            </div>
+            
             <Link  to={title}><div className='more'>See More...</div></Link>
         </div>
    

@@ -13,10 +13,14 @@
     .sign-up-container {
         padding: 0px 40px;
         margin: 0;
-        width: 500px;
+        width: 35.75rem;
         border-radius: 10px;
         border: 1px rgba(0, 0, 0, 0.1) solid;
-    }
+        @media (max-width:64em) {
+          width: 70vw;
+        }
+    
+      }
 
     h1 {
         text-align: center;  

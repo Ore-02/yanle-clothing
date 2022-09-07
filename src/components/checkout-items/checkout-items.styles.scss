@@ -23,6 +23,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width:64em) {
+          font-size: 14px;
+        }
       
     .name,
     .price,
